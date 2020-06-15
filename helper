@@ -1,9 +1,10 @@
 #!/bin/sh
 
+WD="$(dirname "$(readlink -f "$0")")"
 GAME=$1
 LEVEL=$2
-CONF=./games.conf
-PASSWORD_FILE=./games/$GAME
+CONF=$WD/games.conf
+PASSWORD_FILE=$WD/games/$GAME
 
 function get_config () {
 	while IFS=" " read -r name config;
