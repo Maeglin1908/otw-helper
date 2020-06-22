@@ -6,7 +6,7 @@ LEVEL=$2
 CONF=$WD/games.conf
 PASSWORD_FILE=$WD/games/$GAME
 
-function get_config () {
+function get_config {
 	while IFS=" " read -r name config;
 	do
 		if [ "$name" = "$1" ]; then
@@ -16,7 +16,7 @@ function get_config () {
 	done < $CONF
 }
 
-function get_password () {
+function get_password {
 	while IFS=" " read -r user password;
 	do
 		if [ "$user" = "$1" ]; then
