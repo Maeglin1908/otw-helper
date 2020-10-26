@@ -21,3 +21,5 @@ otw-helper bandit 0
 ## Issues
 
 Problem may occur on natas challenges depending on your browser, in this case the password is set in your clipboard but you have to type the username.
+
+If its your first time connecting to the wargame server, you have to autorize manually the server to be added to known hosts
